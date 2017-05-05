@@ -38,11 +38,12 @@
 //Banner on landing page
 
 .container-fluid .jumbotron {
-  // background-image: image-url("header4.png");
+
   background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),image-url(header3);
+
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 450px;
   margin-top: -20px;
   margin-bottom: 0;
   border-radius: 0;
