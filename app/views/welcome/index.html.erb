@@ -1,113 +1,212 @@
+<!-- 网站头图 -->
+<section class="jumbotron">
+  <div class="container">
+    <div id="landingpagebanner">
 
+      <h1><%= image_tag("爱绘本.png") %>
+      </h1>
 
-<div class="box col-md-12">
-  <!-- <div class="job-header">
-    <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-background" %> -->
-    <div class="box-inner col-md-6 col-md-offset-3">
-       <h1 class="title">Bboy in China</h1>
-       <p class="slogan">Dance listing 是一个可以找寻附近专职霹雳舞的舞蹈老师
-         <br>
-         我们希望借由这个网站，能让大家离开地球表面。
-         <br>
-         努力对抗地心引力吧！
-       </p>
-       <p class="lead">
-         <%= link_to '立即寻找', jobs_path, class: 'btn btn-danger btn-lg' %>
-       </p>
-   </div>
- </div>
-<!-- </div> -->
-
-<div class="content-section-a">
- <div class="container">
-   <div class="row">
-     <div class="col-lg-5 col-sm-6">
-       <hr class="section-heading-spacer">
-       <div class="clearfix"></div>
-       <h2 class="section-heading">面包师</h2>
-       <p class="lead">如果您热爱松软q弹香糯面包，请加入我们。</p>
-     </div>
-     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-       <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
-     </div>
-   </div>
- </div>
-</div>
-
-<div class="content-section-b">
- <div class="container">
-   <div class="row">
-     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-       <hr class="section-heading-spacer">
-       <div class="clearfix"></div>
-       <h2 class="section-heading">蛋糕师</h2>
-       <p class="lead">遍布全国的蛋糕房，将看到你你的手艺</p>
-     </div>
-     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-       <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
-     </div>
-   </div>
- </div>
-</div>
-
-<div class="content-section-a">
- <div class="container">
-   <div class="row">
-     <div class="col-lg-5 col-sm-6">
-       <hr class="section-heading-spacer">
-       <div class="clearfix"></div>
-       <h2 class="section-heading">甜品师</h2>
-       <p class="lead">不能抗拒的美丽，更难抗拒的味道</p>
-     </div>
-     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-       <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
-     </div>
-   </div>
- </div>
-</div>
-
-
-
-
-<div class="jumbotron">
-    <h1 class="title">18K Offer</h1>
-    <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
-    <br>
-    我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
-    <br>
-     凭借自己的努力和天份也会变 Winner
-    </p>
-    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
+      <p>
+        - 给宝宝最好的爱
+      </p>
+      <p>
+        <a class="btn btn-primary-welcome" href="#" role="button">开启旅程</a>
+      </p>
+    </div>
   </div>
+</section>
 
-
-<section id="company">
-  <div class = "container-fluid">
+<!--======== 年龄分组=========-->
+<section id="agegroup">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-          <div class="caption">
-            <h3>北京朝阳建外SOHO</h3>
-          </div>
-        </div>
+      <div class="col-md-12 text-center">
+        <h2 class="section-title">从出生开始阅读</h2>
+        <div class="short-line"></div>
       </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-          <div class="caption">
-            <h3>info@18koffer.com</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="age-box">
+              <%= image_tag("0M_6M.png") %>
+              <h3>0-6个月</h3>
+              <p>绘本启蒙从出生开始<br/>
+                鲜艳的颜色是小宝宝的最爱</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-          <div class="caption">
-            <h3>010-12344321</h3>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="age-box">
+              <%= image_tag("6M_1Y.png") %>
+              <h3>6-12个月</h3>
+              <p>开始阅读故事性绘本<br/>爸爸妈妈要变身故事大王</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="age-box">
+              <%= image_tag("1Y_2Y.png") %>
+              <h3>1-2岁</h3>
+              <p>边读边玩，互动游戏<br/>开启难忘的亲子阅读时光</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!--======== end 年龄分组 =========-->
+
+<!--======== 绘本新作 =========-->
+<section id="newbook">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-title">绘本新作</h2>
+        <div class="short-line"></div>
+      </div>
+    </div>
+
+    <div class="row bookrow">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-1 text-center">
+        <div class="image-overlay">
+          <%= image_tag("Book_Sleeping_Beauty.jpg") %>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs text-left">
+        <div class="Intro">
+          <p class="booktitle">Sleeping Beauty
+          </p>
+          <p class="author">
+            Lynn Roberts-Maloney & David Roberts
+          </p>
+          <p class="bookdiscription">Young Annabel lives in the 1950s and dreams of a future with jetpacks, flying cars and robots. Little does she know that she’s living under a witch’s spell which means she could have no future at all. The evil spell comes
+            true on Annabel’s sixteenth birthday and she falls asleep for a thousand years…</p>
+        </div>
+      </div>
+      <div class="col-xs-12 visible-xs">
+        <div class="Intro text-center">
+          <p class="booktitle-xs-screen">Sleeping Beauty
+          </p>
+          <p class="author">
+            Lynn Roberts-Maloney & David Roberts
+          </p>
+          <p class="bookdiscription  text-left">Young Annabel lives in the 1950s and dreams of a future with jetpacks, flying cars and robots. Little does she know that she’s living under a witch’s spell which means she could have no future at all. The evil spell comes
+            true on Annabel’s sixteenth birthday and she falls asleep for a thousand years…</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bookrow">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-1 text-center">
+        <div class="image-overlay">
+          <%= image_tag("Book_Hector_and_hummingbird.jpg") %>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs text-left">
+        <div class="Intro">
+          <p class="booktitle">HECTOR AND HUMMINGBIRD
+          </p>
+          <p class="author">
+            Nicholas John Frith
+          </p>
+          <p class="bookdiscription">YIn the mountains of Peru, Hector the bear has a big problem: his friend Hummingbird just won’t be quiet! Whether Hector’s trying to enjoy a snack, get a good scratch against a tree, or take a nap, Hummingbird’s always
+            buzzing around, asking too many questions. The pair have always been best friends, but will Hector ever find peace and quiet with Hummingbird around?
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 visible-xs">
+        <div class="Intro text-center">
+          <p class="booktitle-xs-screen">HECTOR AND HUMMINGBIRD
+          </p>
+          <p class="author">
+            Nicholas John Frith
+          </p>
+          <p class="bookdiscription text-left">YIn the mountains of Peru, Hector the bear has a big problem: his friend Hummingbird just won’t be quiet! Whether Hector’s trying to enjoy a snack, get a good scratch against a tree, or take a nap, Hummingbird’s always
+            buzzing around, asking too many questions. The pair have always been best friends, but will Hector ever find peace and quiet with Hummingbird around?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bookrow">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-1 text-center">
+        <div class="image-overlay">
+          <%= image_tag("Book_Starry_night.jpg") %>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs text-left">
+        <div class="Intro">
+          <p class="booktitle">THE STARRY STARRY NIGHT
+          </p>
+          <p class="author">
+            Jimmy Liao
+          </p>
+          <p class="bookdiscription">A girl, who used to live with her grandparents up in the mountains, moves to the city to live with her parents. She finds the city cold and distant, and her parents are always arguing. She misses her dear grandfather, who
+            will soon die, and she dreams of laying in a field, looking up at the starry night above. Everything changes for the girl when a boy moves into the apartment across the street… ‘The Starry Starry Night’ is a magical story of sorrow and silence,
+            courage and love.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 visible-xs">
+        <div class="Intro text-center">
+          <p class="booktitle-xs-screen">THE STARRY STARRY NIGHT
+          </p>
+          <p class="author">
+            Jimmy Liao
+          </p>
+          <p class="bookdiscription text-left">A girl, who used to live with her grandparents up in the mountains, moves to the city to live with her parents. She finds the city cold and distant, and her parents are always arguing. She misses her dear grandfather, who
+            will soon die, and she dreams of laying in a field, looking up at the starry night above. Everything changes for the girl when a boy moves into the apartment across the street… ‘The Starry Starry Night’ is a magical story of sorrow and silence,
+            courage and love.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!--======== end 绘本新作 =========-->
+
+<!--======== 绘本大师 =========-->
+<section id="masters">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-title">宝宝最爱的绘本作者</h2>
+        <div class="short-line"></div>
+        <div id="master-intro" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#master-intro" data-slide-to="0" class="active"></li>
+            <li data-target="#master-intro" data-slide-to="1"></li>
+            <li data-target="#master-intro" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p>苏斯博士一生创作了48本绘本畅销2亿册，整个当代儿童阅读推广进程都与他有关，包括分级阅读、睡前故事和亲子阅读的传统。他的生日3月2日被定为全美读书日「Read Across America」。他笔下的人物独特又可爱，语言精致独特，充满了节奏和韵律。</p>
+              <%= image_tag("DrSeuss_author.jpg") %>
+              <strong>Dr.Seuss
+              </strong>
+            </div>
+            <div class="item">
+
+              <p>艾瑞克•卡尔爷爷是儿童绘本界的明星作家，极其善于把一系列的认知内容融入一个简单却有趣的小故事，富含哲理。代表作有《好饿的毛毛虫》、《爸爸，我要月亮》等，荣获多项世界著名儿童图画书奖。
+              </p>
+              <%= image_tag("Eric_Carle_author.jpg") %>
+              <strong>Eric Carle</strong>
+            </div>
+            <div class="item">
+              <p>Nina Laden善于利用为低幼儿童创作趣味性和互动性强的绘本，画面鲜艳，图形有趣，绘本由于不受语言限制，广受世界各国小宝宝喜爱。代表作有《猜猜我是谁》系列，《预备，出发！》</p>
+              <%= image_tag("nina_laden_author.jpg") %>
+              <strong>Nina Laden</strong>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--======== end 绘本大师 =========-->
